@@ -104,7 +104,7 @@ function TerminalViewModel(loginStateViewModel, settingsViewModel) {
                 type: "POST",
                 dataType: "json",
                 contentType: "application/json; charset=UTF-8",
-                data: JSON.stringify({"command": command})
+                data: JSON.stringify({"command": command.toUpperCase()})
             });
             self.command("");
         }
